@@ -1,0 +1,15 @@
+.shp{
+  min-height: 60vh;
+}
+
+.category-img {
+  background-color: #F6F4E8;
+  width: 250px;
+  height: 250px;
+  object-fit: contain;      
+  border-radius: 50%;     
+}
+.shpbyctgrheading{
+   font-family: "Mozilla Headline", sans-serif;
+   font-size: 40px;
+}

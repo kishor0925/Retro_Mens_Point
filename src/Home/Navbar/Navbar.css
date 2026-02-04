@@ -1,0 +1,27 @@
+
+.brand:hover {
+  color: #0DCAF0;
+}
+.brand{
+  text-transform: uppercase;
+  font-family: "Bungee", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.items .nav-link {
+  color: #E5E7EB;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+  text-transform: uppercase;
+  font-family: "Bungee", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.items .nav-link:hover {
+  color: #0DCAF0;
+}
+
+.items .nav-link.active {
+  color: #FFFFFF;
+  border-bottom: 2px solid #0DCAF0;
+}
