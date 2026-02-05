@@ -15,7 +15,7 @@ const Carousel = () => {
       <div className="carousel-inner">
 
         <div className="carousel-item active">
-          <div className="container-fluid py-5">
+          <div className="container py-5">
             <div className="row align-items-center  carousel-text">
               <div className="col-lg-6">
                 <p className="text-uppercase text-muted">
@@ -43,7 +43,7 @@ const Carousel = () => {
 
         {/* SLIDE 2 */}
         <div className="carousel-item">
-          <div className="container-fluid py-5">
+          <div className="container py-5">
             <div className="row align-items-center  carousel-text">
               <div className="col-lg-6">
                 <p className="text-uppercase text-muted">
@@ -69,7 +69,7 @@ const Carousel = () => {
 
         {/* SLIDE 3 */}
         <div className="carousel-item">
-          <div className="container-fluid py-5 ">
+          <div className="container py-5 ">
             <div className="row align-items-center  carousel-text">
               <div className="col-lg-6">
                 <p className="text-uppercase text-muted">

@@ -1,0 +1,29 @@
+.swiper-button-next,.swiper-button-prev{
+    padding: 10px;
+    color: rgb(253, 253, 253);
+    background-color: red;
+    border-radius: 50%;
+    width: 35px;
+    height: 30px;
+
+}
+.review-name{
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+.review-stars{
+    font-size: larger;
+    font-weight: bolder;
+    letter-spacing: 5px;
+}
+.review-comment{
+    text-transform: capitalize;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+.review-location{
+    color: #6b8e6e;
+    font-weight: bolder;
+}
