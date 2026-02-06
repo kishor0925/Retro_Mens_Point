@@ -8,6 +8,8 @@ import white from './Images/WhiteShirt.webp'
 import whitepant from './Images/MomFit.webp'
 import { Navigation } from 'swiper/modules'
 import './Latestcollection.css'
+import { Link } from 'react-router-dom'
+
 const LatestCollections = () => {
 
     const LastestCollection = [
@@ -100,6 +102,13 @@ const LatestCollections = () => {
                         </div>
                     </SwiperSlide>
                 ))}
+
+                <div className="d-flex justify-content-center mb-5">
+                    <Link to="/newarrival" className="btn btn-danger">
+                        Shop More
+                    </Link>
+                </div>
+
             </Swiper>
 
         </div>

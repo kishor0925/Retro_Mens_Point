@@ -1,0 +1,12 @@
+
+.card-body .card-title{
+  font-family: 'Inter', sans-serif;
+  font-size: 0.95rem;
+  text-transform: capitalize;
+}
+.product-brand{
+    font-family: 'Inter', sans-serif;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: bolder;
+}

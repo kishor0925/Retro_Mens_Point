@@ -3,7 +3,7 @@ import img2 from './carouselImages/retroimg2.png'
 import img1 from  './carouselImages/retroimg3.png'
 import img3 from './carouselImages/logo.png'
 import '../Courousel/Courosel.css'
-
+import {Link} from 'react-router-dom'
 const Carousel = () => {
   return (
     <div
@@ -28,9 +28,12 @@ const Carousel = () => {
                   Discover everyday fashion made for comfort, confidence, and
                   a perfect fit.
                 </p>
-                <button className="btn btn-info px-4">
-                  SHOP NOW
+                
+                <Link to = "/newarrival">
+                 <button className="btn btn-danger">
+                  SHOP MORE
                 </button>
+                </Link>
               </div>
 
               <div className="col-lg-6">
@@ -55,9 +58,11 @@ const Carousel = () => {
                 <p className="text-muted">
                   Upgrade your style with our latest premium outfits.
                 </p>
-                <button className="btn btn-info px-4">
-                  EXPLORE
+                <Link to = "/newarrival">
+                 <button className="btn btn-danger">
+                  SHOP MORE
                 </button>
+                </Link>
               </div>
 
               <div className="col-lg-6">
@@ -81,9 +86,11 @@ const Carousel = () => {
                 <p className="text-muted">
                   Timeless fashion inspired by modern street culture.
                 </p>
-                <button className="btn btn-info px-4">
-                  SHOP COLLECTION
+               <Link to = "/newarrival">
+                 <button className="btn btn-danger">
+                  SHOP MORE
                 </button>
+                </Link>
               </div>
 
               <div className="col-lg-6">

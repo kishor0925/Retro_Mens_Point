@@ -1,9 +1,10 @@
 import React from "react"
 import logo from "./Images/logo.png"
 import './Footer.css'
+import { Link } from "react-router-dom"
 const Footer = () => {
   return (
-    <footer className="footer">
+    <footer className="footer bg-dark color-dark">
       <div className="container">
         <div className="row gy-4">
 
@@ -14,7 +15,7 @@ const Footer = () => {
 
           {/* Stores */}
           <div className="col-12 col-md-6 col-lg-3">
-            <h5 className="footer-title">Our Stores</h5>
+            <h5 className="footer-title fw-bold">Our Stores</h5>
             <ul className="footer-list">
               <li >Kanchipuram</li>
               <li>Trichy – Thillai Nagar</li>
@@ -27,9 +28,13 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div className="col-12 col-md-6 col-lg-3">
-            <h5 className="footer-title">Quick Links</h5>
+            <h5 className="footer-title fw-bold">Quick Links</h5>
             <ul className="footer-list">
-              <li>New Arrivals</li>
+              <li>
+                <Link to="/newarrival" >
+                  New Arrivals
+                </Link>
+              </li>
               <li>Trending Now</li>
               <li>Hoodies</li>
               <li>T-Shirts</li>
@@ -39,7 +44,7 @@ const Footer = () => {
 
           {/* Contact */}
           <div className="col-12 col-md-6 col-lg-3">
-            <h5 className="footer-title">Contact Us</h5>
+            <h5 className="footer-title fw-bold">Contact Us</h5>
             <p className="footer-text">
               No. 378, Near Petit Canal Street,<br />
               Mahatma Gandhi Road,<br />

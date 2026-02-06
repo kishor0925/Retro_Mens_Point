@@ -2,6 +2,7 @@ import React from "react";
 import b1 from "./Bannerimages/banner1.webp";
 import b2 from "./Bannerimages/banner2.webp";
 import "./Banner.css";
+import { Link } from "react-router-dom";
 
 const Banner = () => {
   return (
@@ -18,9 +19,9 @@ const Banner = () => {
                 <h2>
                   Explore Our <br /> New Collection
                 </h2>
-                <a href="/shop" className="banner-btn">
+                <Link to= "/newarrival" className="banner-btn">
                   SHOP NOW
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -35,9 +36,9 @@ const Banner = () => {
                 <h2>
                   Modern Men's <br /> New Look
                 </h2>
-                <a href="/shop" className="banner-btn">
+                <Link to= "/newarrival" className="banner-btn">
                   SHOP NOW
-                </a>
+                </Link>
               </div>
             </div>
           </div>

@@ -1,6 +1,7 @@
 import React from 'react'
 import './Navbar.css'
 import BestOffersOffcanvas from './BestOffersOffcanvas'
+import { NavLink } from 'react-router-dom'
 
 const Navbar = () => {
   return (
@@ -25,7 +26,9 @@ const Navbar = () => {
 
             <ul className="navbar-nav mx-auto items">
               <li className="nav-item">
-                <a className="nav-link" href="#">New Arrivals</a>
+                <NavLink className = "nav-link" to="/newarrival">
+                    New Arrivals
+                </NavLink>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="#">Trending Now</a>

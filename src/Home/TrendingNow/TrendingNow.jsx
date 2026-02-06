@@ -11,6 +11,7 @@ import LinenBlendShirt from "./TrendingNowImages/LinenBlendShirt.webp";
 import oversizedshirt from "./TrendingNowImages/OversizedShirt.webp";
 import printedBlue from "./TrendingNowImages/PrintedBlueShirt.webp";
 import printedRed from "./TrendingNowImages/PrintedRedShirt.webp";
+import { Link } from "react-router-dom";
 
 
 const TrendingNow = () => {
@@ -100,9 +101,9 @@ const TrendingNow = () => {
                     ))}
 
                     <div className="text-center">
-                        <button className="btn btn-danger px-4 py-2">
+                        <Link to="/newarrival" className="btn btn-danger px-4 py-2">
                             Shop More
-                        </button>
+                        </Link>
                     </div>
                 </Swiper>
             </div>
