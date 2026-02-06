@@ -1,10 +1,9 @@
 import React from 'react'
-import './NewArrivalLayout.css'
 
-const NewArrivalLayout = ({ product }) => {
-    return (
-        <> 
-            <div className="col-6 col-md-4 col-lg-3 mb-4 mt-4">
+const HoodiesLayout = ({product}) => {
+  return (
+    <>
+          <div className="col-6 col-md-4 col-lg-3 mb-4 mt-4">
                 <div className="card h-100  position-relative">
                     <img src={product.image} className="card-img-top" alt={product.name} />
 
@@ -39,9 +38,8 @@ const NewArrivalLayout = ({ product }) => {
                     </div>
                 </div>
             </div>
-        </>
-
-    )
+    </>
+  )
 }
 
-export default NewArrivalLayout
+export default HoodiesLayout

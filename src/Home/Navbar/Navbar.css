@@ -22,6 +22,5 @@
 }
 
 .items .nav-link.active {
-  color: #FFFFFF;
-  border-bottom: 2px solid #0DCAF0;
+  color: tomato;
 }

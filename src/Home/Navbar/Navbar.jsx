@@ -25,16 +25,26 @@ const Navbar = () => {
           <div className="collapse navbar-collapse" id="navmenu">
 
             <ul className="navbar-nav mx-auto items">
+
+              <li className='nav-item'>
+                <NavLink className = "nav-link"  to = "/">
+                    Home
+                </NavLink>
+              </li>
               <li className="nav-item">
                 <NavLink className = "nav-link" to="/newarrival">
                     New Arrivals
                 </NavLink>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">Trending Now</a>
+                <NavLink to="/trendingnow" className="nav-link">
+                  Trending Now
+                </NavLink>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">Hoodies</a>
+                <NavLink to="/hoodies" className= "nav-link">
+                  Hoodies
+                </NavLink>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="#">T-Shirts</a>
