@@ -27,30 +27,29 @@ const Navbar = () => {
             <ul className="navbar-nav mx-auto items">
 
               <li className='nav-item'>
-                <NavLink className = "nav-link"  to = "/">
+                <NavLink className = "nav-link navlinks"  to = "/">
                     Home
                 </NavLink>
               </li>
               <li className="nav-item">
-                <NavLink className = "nav-link" to="/newarrival">
+                <NavLink className = "nav-link navlinks" to="/newarrival">
                     New Arrivals
                 </NavLink>
               </li>
               <li className="nav-item">
-                <NavLink to="/trendingnow" className="nav-link">
+                <NavLink to="/trendingnow" className="nav-link navlinks">
                   Trending Now
                 </NavLink>
               </li>
               <li className="nav-item">
-                <NavLink to="/hoodies" className= "nav-link">
+                <NavLink to="/hoodies" className= "nav-link navlinks">
                   Hoodies
                 </NavLink>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">T-Shirts</a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#">Shirts</a>
+                <NavLink to="/tshirt" className= "nav-link navlinks">
+                  T-Shirt
+                </NavLink>
               </li>
             </ul>
 

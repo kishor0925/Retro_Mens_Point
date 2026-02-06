@@ -10,21 +10,21 @@ const Carousel = () => {
       id="heroCarousel"
       className="carousel slide"
       data-bs-ride="carousel"
-      data-bs-interval="2000"
+      data-bs-interval="5000"
     >
       <div className="carousel-inner">
 
         <div className="carousel-item active">
-          <div className="container py-5">
-            <div className="row align-items-center  carousel-text">
+          <div className="container py-5 ">
+            <div className="row align-items-center  carousel-text  text-white bg-dark">
               <div className="col-lg-6">
-                <p className="text-uppercase text-muted">
+                <p className="text-uppercase">
                   Style That Defines You
                 </p>
                 <h1 className="fw-bold">
                   Trendy Shirts, Jeans & <br /> T-Shirts for Men
                 </h1>
-                <p className="text-muted">
+                <p>
                   Discover everyday fashion made for comfort, confidence, and
                   a perfect fit.
                 </p>
@@ -47,15 +47,15 @@ const Carousel = () => {
         {/* SLIDE 2 */}
         <div className="carousel-item">
           <div className="container py-5">
-            <div className="row align-items-center  carousel-text">
+            <div className="row align-items-center  carousel-text text-white bg-dark">
               <div className="col-lg-6">
-                <p className="text-uppercase text-muted">
+                <p className="text-uppercase">
                   New Arrivals
                 </p>
                 <h1 className="fw-bold">
                   Premium Streetwear <br /> Collections
                 </h1>
-                <p className="text-muted">
+                <p>
                   Upgrade your style with our latest premium outfits.
                 </p>
                 <Link to = "/newarrival">
@@ -75,15 +75,15 @@ const Carousel = () => {
         {/* SLIDE 3 */}
         <div className="carousel-item">
           <div className="container py-5 ">
-            <div className="row align-items-center  carousel-text">
+            <div className="row align-items-center carousel-text text-white bg-dark">
               <div className="col-lg-6">
-                <p className="text-uppercase text-muted">
+                <p className="text-uppercase">
                   Retro Vibes
                 </p>
                 <h1 className="fw-bold">
                   Classic Fits <br /> Modern Look
                 </h1>
-                <p className="text-muted">
+                <p>
                   Timeless fashion inspired by modern street culture.
                 </p>
                <Link to = "/newarrival">
