@@ -17,7 +17,7 @@ import OversizeHoodie from "./Images/OversizeHoodie.webp";
 import ProhibitedHoodie from "./Images/ProhibitedHoodie.webp";
 import StreetHoodie from "./Images/StreetHoodie.webp";
 import WhiteHoodie from "./Images/WhiteHoodie.webp";
-import WipHoodie from "./Images/WipHoodie.webp";
+import WipHoodie from "./Images/wip-hoodie.webp";
 
 const Hoodies = () => {
     const products = [
