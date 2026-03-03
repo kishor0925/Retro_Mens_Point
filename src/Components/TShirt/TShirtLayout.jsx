@@ -1,6 +1,11 @@
 import React from "react";
 import TShirt from "./TShirt";
+import { useDispatch } from "react-redux";
+import { addtoCart } from "../../slice/Cartslice";
 const TShirtLayout = ({ product }) => {
+
+  const dispatch = useDispatch();
+
   return (
     <div className="col-6 col-md-4 col-lg-3 mb-4 mt-4">
       <div className="card h-100 position-relative">
@@ -38,6 +43,15 @@ const TShirtLayout = ({ product }) => {
               🚚 2 days delivery
             </span>
           )}
+
+
+          <button
+          className="btn btn-danger"
+          onClick={() => dispatch(addtoCart(product))}
+          >
+            Add to Cart
+
+          </button>
         </div>
       </div>
     </div>

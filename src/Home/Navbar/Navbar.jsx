@@ -51,6 +51,11 @@ const Navbar = () => {
                   T-Shirt
                 </NavLink>
               </li>
+              <li className="nav-item">
+                <NavLink to = "/cart"  className= "nav-link navlinks">
+                  cart
+                </NavLink>
+              </li>
             </ul>
 
             <ul className='navbar-nav d-none d-lg-block items'>

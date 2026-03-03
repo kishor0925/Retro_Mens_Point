@@ -2,8 +2,6 @@ import React from "react";
 import TrendingNowLayout from "./TrendingNowLayoutpage";
 import Navbar from "../../Home/Navbar/Navbar";
 import Footer from "../../Home/Footer/Footer";
-// images
-
 import BackPrintedhoodies from "./Images/BackPrintedhoodies.webp";
 import BlackPant from "./Images/BlackPant.webp";
 import Blackshirt from "./Images/Blackshirt.webp";
