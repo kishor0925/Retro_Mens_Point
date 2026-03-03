@@ -45,6 +45,7 @@ const TShirtLayout = ({ product }) => {
           )}
 
 
+
           <button
           className="btn btn-danger"
           onClick={() => dispatch(addtoCart(product))}
