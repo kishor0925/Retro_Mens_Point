@@ -1,109 +1,113 @@
-🛍️ Retro Men's Point – React E-Commerce Websit
+# 🛍️ Retro Men's Point – React E-Commerce Website
 
-Retro Men's Point is a modern Men's Fashion E-Commerce Website built using React + Vite.
-It provides a clean shopping experience where users can browse trending men's clothing, explore different product categories, and manage items in a shopping cart.
+**Retro Men's Point** is a modern **Men's Fashion E-Commerce Website** built using **React + Vite**.
+It provides a clean shopping experience where users can browse trending men's clothing, explore different product categories, and manage items in a **shopping cart**.
 
-The project demonstrates React component architecture, Redux state management, responsive UI design, and modern frontend development practices.
+The project demonstrates **React component architecture, Redux state management, responsive UI design, and modern frontend development practices.**
 
-🔗 Live Website
+🔗 **Live Website**
 https://retro-mens-point-oymq.vercel.app/
 
-🚀 Features
+---
 
-✅ Modern React + Vite frontend architecture
-✅ Redux Cart Management System
-✅ Add / Remove items from Cart Page
-✅ Product Categories
+## 🚀 Features
 
-T-Shirts
+* ✅ Modern **React + Vite** frontend architecture
+* ✅ **Redux Cart Management System**
+* ✅ Add / Remove items from **Cart Page**
 
-Hoodies
+### Product Categories
 
-New Arrivals
+* T-Shirts
+* Hoodies
+* New Arrivals
+* Trending Now
 
-Trending Now
+### UI Features
 
-✅ Responsive Navbar
-✅ Responsive Footer
-✅ Swiper Carousel / Product Slider
-✅ Customer Testimonials Section
-✅ Latest Collection Showcase
-✅ Shop By Category Section
-✅ Best Offers Offcanvas Panel
-✅ Fully Responsive Design (Mobile / Tablet / Desktop)
-✅ Optimized fast development using Vite
+* Responsive Navbar
+* Responsive Footer
+* Swiper Carousel / Product Slider
+* Customer Testimonials Section
+* Latest Collection Showcase
+* Shop By Category Section
+* Best Offers Offcanvas Panel
+* Fully Responsive Design (Mobile / Tablet / Desktop)
+* Optimized fast development using **Vite**
 
-🧑‍💻 Tech Stack
-Frontend
+---
 
-React.js
+## 🧑‍💻 Tech Stack
 
-Vite
+### Frontend
 
-JavaScript (ES6+)
+* React.js
+* Vite
+* JavaScript (ES6+)
 
-State Management
+### State Management
 
-Redux
+* Redux
 
-Styling
+### Styling
 
-Bootstrap
+* Bootstrap
+* CSS3
+* Responsive Web Design
 
-CSS3
+### UI Libraries
 
-Responsive Web Design
+* React Swiper (Carousel Slider)
 
-UI Libraries
+### Deployment
 
-React Swiper (Carousel Slider)
+* Vercel
 
-Deployment
+---
 
-Vercel
+## 📂 Project Structure
 
-📂 Project Structure
+```
 src
 │
 ├── Components
-│
 │   ├── CartPage
 │   │   └── CartPage.jsx
-│
+│   │
 │   ├── Hoodies
 │   │   ├── Hoodies.jsx
 │   │   └── HoodiesLayout.jsx
-│
+│   │
 │   ├── TShirt
 │   │   ├── TShirt.jsx
 │   │   └── TShirtLayout.jsx
-│
+│   │
 │   ├── NewArrival
 │   │   ├── NewArrival.jsx
 │   │   └── NewArrivalLayout.jsx
-│
+│   │
 │   ├── TrendingNow
 │   │   ├── TrendingNowpage.jsx
 │   │   └── TrendingNowLayoutpage.jsx
-│
+│   │
 │   ├── Navbar
 │   │   └── Navbar.jsx
-│
+│   │
 │   ├── Footer
 │   │   └── Footer.jsx
-│
+│   │
 │   ├── Banner
 │   │   └── Banner.jsx
-│
+│   │
 │   ├── Carousel
 │   │   └── Courosel.jsx
-│
+│   │
 │   ├── LatestCollection
 │   │   └── LatestCollections.jsx
-│
+│   │
 │   ├── ShopByCategory
 │   │   └── Shpbycstgry.jsx
-│
+│   │
 │   └── Testimonials
 │       └── CustomerReview.jsx
 │
@@ -116,80 +120,93 @@ src
 ├── Home.jsx
 ├── main.jsx
 └── index.css
-⚙️ Installation & Setup
-1️⃣ Clone the Repository
+```
+
+---
+
+## ⚙️ Installation & Setup
+
+### 1️⃣ Clone the Repository
+
+```bash
 git clone https://github.com/your-username/retro-mens-point.git
-2️⃣ Navigate to Project Folder
+```
+
+### 2️⃣ Navigate to Project Folder
+
+```bash
 cd retro-mens-point
-3️⃣ Install Dependencies
+```
+
+### 3️⃣ Install Dependencies
+
+```bash
 npm install
-4️⃣ Run Development Server
+```
+
+### 4️⃣ Run Development Server
+
+```bash
 npm run dev
+```
 
-App will start on:
+The app will start on:
 
+```
 http://localhost:5173
-📸 Website Sections
+```
 
-Home Page
+---
 
-Banner Section
+## 📸 Website Sections
 
-Trending Now
+* Home Page
+* Banner Section
+* Trending Now
+* New Arrivals
+* T-Shirt Collection
+* Hoodies Collection
+* Latest Collections
+* Customer Reviews
+* Cart Page
+* Footer
 
-New Arrivals
+---
 
-T-Shirt Collection
-
-Hoodies Collection
-
-Latest Collections
-
-Customer Reviews
-
-Cart Page
-
-Footer
-
-🎯 Learning Highlights
+## 🎯 Learning Highlights
 
 This project demonstrates:
 
-React Component-Based Architecture
+* React **Component-Based Architecture**
+* **Redux State Management**
+* **Reusable UI Components**
+* **Responsive Layout Design**
+* **E-Commerce UI Structure**
+* **Swiper Slider Integration**
+* **Frontend Project Organization**
 
-Redux State Management
+---
 
-Reusable UI Components
+## 🔮 Future Improvements
 
-Responsive Layout Design
+* Product Search
+* Product Filtering
+* Wishlist Feature
+* Authentication System
+* Backend API Integration
+* Payment Gateway Integration
 
-E-Commerce UI Structure
+---
 
-Swiper Slider Integration
+## 👨‍💻 Author
 
-Frontend Project Organization
-
-🔮 Future Improvements
-
-Product Search
-
-Product Filtering
-
-Wishlist Feature
-
-Authentication System
-
-Backend API Integration
-
-Payment Gateway Integration
-
-👨‍💻 Author
-
-Kishor
+**Kishor**
 
 Frontend Developer
 React Developer
 
-⭐ Support
+---
 
-If you like this project, give it a ⭐ on GitHub and share it.
+## ⭐ Support
+
+If you like this project, give it a **⭐ on GitHub and share it.**
