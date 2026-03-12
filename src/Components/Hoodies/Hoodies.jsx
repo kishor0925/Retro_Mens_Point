@@ -37,7 +37,7 @@ const Hoodies = () => {
         },
         {
             id: 2,
-            brand: "Blaze Wear",
+            brand: "Blaze Wears",
             title: "Back Print Street Hoodie",
             name: "StreetCore Hoodie - Black",
             image: BackPrintHoodie,
