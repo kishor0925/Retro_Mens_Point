@@ -20,5 +20,10 @@
 .items .nav-link:hover {
   color: #0DCAF0;
 }
-
+.topnav {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+}
 
