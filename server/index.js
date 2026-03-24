@@ -43,10 +43,19 @@ app.post('/productupload' , async(req, res) => {
         const result = await database.insertOne(data);
         res.send(result)
     } catch (error) {
-        res.status('500').send('Error');
         console.log(error.message);
     }
 })
+
+app.get('/hoodies' , async(req, res) => {
+  try {
+    const result = await database.find({category : 'Hoodies'}).toArray();
+    res.send(result);
+  } catch (error) {
+      console.log(error.message)
+  }
+})
+
 
 
 app.listen(PORT);
