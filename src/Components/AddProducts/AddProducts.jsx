@@ -68,7 +68,7 @@ const AddProducts = () => {
       return;
     }
 
-    if (price > oldPrice) {
+    if (Number(price) > Number(oldPrice)) {
       alert("Price cannot be greater than Old Price ");
       return;
     }

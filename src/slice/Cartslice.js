@@ -12,7 +12,7 @@ export const cartSlice = createSlice({
     reducers : {
         addtoCart(state,action){
             const items = action.payload;
-            const existingItems = state.cartItems.find(i => i.id === items.id);
+            const existingItems = state.cartItems.find(i => i._id === items._id);
 
             if(existingItems)
             {
@@ -28,7 +28,7 @@ export const cartSlice = createSlice({
         },
         updatequan(state, action){
             const {pid, change} = action.payload;
-            const orgid = state.cartItems.find(i => i.id === pid);
+            const orgid = state.cartItems.find(i => i._id === pid);
 
             if(orgid)
             {
@@ -43,7 +43,7 @@ export const cartSlice = createSlice({
         },
         removeCart(state,action){
             const removeid = action.payload;
-            state.cartItems = state.cartItems.filter(i => i.id !== removeid)
+            state.cartItems = state.cartItems.filter(i => i._id !== removeid)
 
             localStorage.setItem('cartItems', JSON.stringify(state.cartItems));
         },

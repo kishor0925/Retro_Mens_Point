@@ -7,7 +7,7 @@ const Hoodies = () => {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5444/hoodies")
+    fetch("http://localhost:5444/products?category=hoodies")
       .then((res) => res.json())
       .then((data) => {
         console.log("API DATA:", data);

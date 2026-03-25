@@ -67,7 +67,7 @@ const CartPage = () => {
                                                 <button
                                                     className="btn btn-sm btn-outline-secondary"
                                                     onClick={() =>
-                                                        dispatch(updatequan({ pid: item.id, change: -1 }))
+                                                        dispatch(updatequan({ pid: item._id, change: -1 }))
                                                     }
                                                 >
                                                     -
@@ -80,7 +80,7 @@ const CartPage = () => {
                                                 <button
                                                     className="btn btn-sm btn-outline-secondary"
                                                     onClick={() =>
-                                                        dispatch(updatequan({ pid: item.id, change: 1 }))
+                                                        dispatch(updatequan({ pid: item._id, change: 1 }))
                                                     }
                                                 >
                                                     +
@@ -96,7 +96,7 @@ const CartPage = () => {
 
                                         <td>
                                             <button className='btn btn-danger'
-                                            onClick={() => dispatch(removeCart(item.id))}
+                                            onClick={() => dispatch(removeCart(item._id))}
                                             >
                                             Remove cart
                                             </button>

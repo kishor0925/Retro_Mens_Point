@@ -47,14 +47,43 @@ app.post('/productupload' , async(req, res) => {
     }
 })
 
-app.get('/hoodies' , async(req, res) => {
+// app.get('/hoodies' , async(req, res) => {
+//   try {
+//     const result = await database.find({category : 'hoodies'}).toArray();
+//     res.send(result);
+//   } catch (error) {
+//       console.log(error.message)
+//   }
+// })
+
+app.get('/products' , async(req, res) => {
   try {
-    const result = await database.find({category : 'Hoodies'}).toArray();
+    const {category, isTrending, isNewArrival} = req.query;
+    let filter = {};
+
+    if(category){
+      filter.category = category.toLocaleLowerCase().trim();
+    }
+
+    if(isTrending){
+      filter.isTrending = isTrending === 'true';
+    }
+
+    if(isNewArrival){
+      filter.isNewArrival = isNewArrival === 'true';
+    }
+
+    const result = await database.find(filter).toArray();
     res.send(result);
   } catch (error) {
       console.log(error.message)
   }
 })
+
+
+
+
+
 
 
 
