@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import Navbar from "../Home/Navbar/Navbar";
 import Footer from "../Home/Footer/Footer";
 const ViewPage = () => {
@@ -54,8 +55,12 @@ const ViewPage = () => {
                     <span className="badge bg-primary m-1">New</span>
                   )}
                 </div>
-                <button className="btn btn-info m-2">
-                    Update
+                <button 
+                className="btn btn-info m-2"
+                >
+                    <Link to={`/edit/${item._id}`}>
+                        Update
+                    </Link>    
                 </button>
 
                 <button className="btn btn-danger m-2">
