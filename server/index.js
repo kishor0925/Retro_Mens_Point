@@ -65,11 +65,11 @@ app.get('/products' , async(req, res) => {
       filter.category = category.toLocaleLowerCase().trim();
     }
 
-    if(isTrending){
+     if (isTrending ) {
       filter.isTrending = isTrending === 'true';
     }
 
-    if(isNewArrival){
+    if (isNewArrival) {
       filter.isNewArrival = isNewArrival === 'true';
     }
 
@@ -96,7 +96,16 @@ app.get('/getdata/:id', async (req, res) => {
 
 
 
+app.patch('/editdata/:id' , async(req, res) => {
 
+  const id = req.params.id;
+  const obj = {_id : new ObjectId(id)}
+  const data = req.body;
+  const updateddata = {$set : {...data}};
+  const option = {upsert : true};
+  const result = await database.updateOne(obj, updateddata, option);
+  res.send(result);
+})
 
 
 

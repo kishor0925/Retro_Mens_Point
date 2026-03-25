@@ -9,7 +9,7 @@ const TrendingNow = () => {
   const [products , setProducts] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:5444/products?isTrendingNow===true')
+    fetch('http://localhost:5444/products?isTrending=true')
     .then(res => res.json())
     .then(data => setProducts(data) )
     .catch(err => console.log(err))

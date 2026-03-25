@@ -11,7 +11,7 @@ const NewArrival = () => {
 
   useEffect(() => {
 
-    fetch('http://localhost:5444/products?isNewArrival===true')
+    fetch('http://localhost:5444/products?isNewArrival=true')
     .then(res => res.json())
     .then(data => setProducts(data))
     .catch(err => console.log(err))
