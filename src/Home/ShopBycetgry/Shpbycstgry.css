@@ -6,8 +6,13 @@
   height: 250px;
   object-fit: contain;      
   border-radius: 50%;     
-}
+} 
 .shpbyctgrheading{
    font-family: "Mozilla Headline", sans-serif;
    font-size: 40px;
+}
+
+.card-img-top {
+  height: 250px;
+  object-fit: cover;
 }

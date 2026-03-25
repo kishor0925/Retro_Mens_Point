@@ -18,7 +18,7 @@ const TShirt = () => {
       <Navbar />
       <div className="container">
         <h1 className="shpbyctgrheading m-5 text-center">
-          T-Shits
+          T-Shirts
         </h1>
         <div className="row">
           {products.map((item) => (

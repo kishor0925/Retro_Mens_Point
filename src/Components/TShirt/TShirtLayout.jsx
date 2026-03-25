@@ -11,7 +11,7 @@ const TShirtLayout = ({ product }) => {
       <div className="card h-100 position-relative">
         <img
           src={product.image}
-          className="card-img-top product-img"
+          className="card-img-top"
           alt={product.name}
         />
 

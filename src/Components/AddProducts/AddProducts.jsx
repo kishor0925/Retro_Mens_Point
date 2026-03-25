@@ -2,8 +2,12 @@ import React from "react";
 import Navbar from "../../Home/Navbar/Navbar";
 import Footer from "../../Home/Footer/Footer";
 import "./AddProducts.css";
+import { useNavigate } from "react-router-dom";
 
 const AddProducts = () => {
+
+  const navigate = useNavigate();
+
   function handleSubmit(event) {
     event.preventDefault();
     console.log('Form Submited');
@@ -110,6 +114,7 @@ const AddProducts = () => {
     .then((res) => res.json())
     .then((data) => {
       alert('Data upload to you DB!..')
+      navigate('/view')
       form.reset();
     })
   }

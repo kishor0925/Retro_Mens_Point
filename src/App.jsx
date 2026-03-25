@@ -8,6 +8,7 @@ import Hoodies from "./Components/Hoodies/Hoodies.jsx";
 import TShirt from "./Components/TShirt/TShirt.jsx";
 import CartPage from "./Components/CartPage/CartPage.jsx";
 import AddProducts from "./Components/AddProducts/AddProducts.jsx";
+import ViewPage from "./ViewPage/ViewPage.jsx";
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
         <Route path="/tshirt" element = {<TShirt/>} />
         <Route path="/cart" element = {<CartPage/>}/>
         <Route path="/addproducts" element = {<AddProducts/>} />
+        <Route path="/view" element = {<ViewPage/>} />
       </Routes>
     </BrowserRouter>
   );
