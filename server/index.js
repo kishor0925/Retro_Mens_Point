@@ -108,7 +108,14 @@ app.patch('/editdata/:id' , async(req, res) => {
 })
 
 
+app.delete('/del/:id' , async(req, res) => {
 
+  const id = req.params.id;
+  const obj = {_id : new ObjectId(id)};
+  const result = await database.deleteOne(obj);
+  res.send(result);
+  
+})
 
 app.listen(PORT);
 

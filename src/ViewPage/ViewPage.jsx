@@ -11,6 +11,18 @@ const ViewPage = () => {
       .then((data) => setProducts(data))
       .catch((err) => console.log(err));
   }, []);
+
+  function handleDelete(id){
+
+    const filter = products.filter(item => item._id !== id);
+    setProducts(filter);
+    fetch(`http://localhost:5444/del/${id}`,{
+      method : 'DELETE'
+    })
+    .then(res => res.json())
+    .then(data => alert('Data Deleted')) 
+    .catch(err => console.log(err))
+  }
   return (
     <>
       <Navbar />
@@ -63,7 +75,7 @@ const ViewPage = () => {
                     </Link>    
                 </button>
 
-                <button className="btn btn-danger m-2">
+                <button className="btn btn-danger m-2" onClick={() => handleDelete(item._id)}>
                     Delete 
                 </button>
               </div>
