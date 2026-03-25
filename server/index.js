@@ -1,7 +1,7 @@
 const express = require('express');
 const cors = require('cors');
 const dns = require('dns');
-const { MongoClient, ServerApiVersion } = require('mongodb');
+const { MongoClient, ServerApiVersion, ObjectId } = require('mongodb');
 
 const PORT = 5444;
 dns.setServers(['8.8.8.8','8.8.4.4']);
@@ -79,6 +79,20 @@ app.get('/products' , async(req, res) => {
       console.log(error.message)
   }
 })
+
+app.get('/getdata/:id', async (req, res) => {
+  try {
+    const id = req.params.id;
+
+    const result = await database.findOne({
+      _id: new ObjectId(id)
+    });
+
+    res.send(result); 
+  } catch (error) {
+    console.log(error.message);
+  }
+});
 
 
 
