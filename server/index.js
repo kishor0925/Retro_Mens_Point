@@ -30,7 +30,7 @@ async function run() {
     database = await client.db('kdb').collection('kcl');
     console.log("MongoDB! connected");
   } finally {
-
+    
     // await client.close();
   }
 }
